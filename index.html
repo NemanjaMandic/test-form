@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navigation">
+            <div class="navigation__btn-group">
+                <p class="navigation__label">Register with</p>
+                <button class="navigation__btn" id="registerEmail">Email</button>
+                <button class="navigation__btn">Telephone</button>
+               
+              </div>
+              
+            <!-- <ul class="navigation__list">
+                <li><button class="navigation__btn" id="register">Sign Up</button></li>
+            </ul> -->
+        </nav>
+    </header>
+    <main class="content">
+       
+        <div id="emailFormModal" class="modal">
+            <span id="close" class="modal__close" title="Close Modal">&times;</span>
+            <form class="modal__content" action="#">
+              <div class="container">
+                <h1>Sign Up</h1>
+                <p>Please fill in this form to create an account.</p>
+                <hr>
+                <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="Enter Email" name="email" required>
+          
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+          
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                
+                <label>
+                  <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                </label>
+          
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+          
+                <div class="clearfix">
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                  <button type="submit" class="signupbtn">Sign Up</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
